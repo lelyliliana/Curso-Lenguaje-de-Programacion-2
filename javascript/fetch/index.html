@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Laboratorio 14 - Fetch</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <p class="nombre-curso">Lenguaje de Programación II</p>
+
+        <h1>Laboratorio 14</h1>
+
+        <h2>Fetch</h2>
+
+        <p class="objetivo">
+            Consultar información desde un servicio externo mediante
+            la función <code>fetch()</code>.
+        </p>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="tarjeta">
+            <h2>Área de experimentación</h2>
+
+            <p>
+                Presiona el botón para consultar la información de
+                diferentes usuarios.
+            </p>
+
+            <div class="botones">
+                <button id="botonConsultar" type="button">
+                    Consultar usuarios
+                </button>
+
+                <button id="botonLimpiar" type="button">
+                    Limpiar
+                </button>
+            </div>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Resultado</h2>
+
+            <div id="resultado" class="resultado">
+                Esperando la consulta...
+            </div>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Observaciones</h2>
+
+            <p>
+                La función <code>fetch()</code> realiza una petición
+                a un recurso externo y devuelve una promesa.
+            </p>
+
+            <p>
+                La respuesta se transforma a formato JSON antes de
+                mostrar la información en la página.
+            </p>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Reto</h2>
+
+            <p>
+                Modifica el programa para mostrar también el teléfono
+                y el sitio web de cada usuario.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p>Laboratorio de JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

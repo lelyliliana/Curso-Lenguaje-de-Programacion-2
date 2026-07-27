@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Laboratorio 13 - Local Storage</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <p class="nombre-curso">Lenguaje de Programación II</p>
+
+        <h1>Laboratorio 13</h1>
+
+        <h2>Local Storage</h2>
+
+        <p class="objetivo">
+            Guardar y recuperar información en el navegador
+            utilizando <code>localStorage</code>.
+        </p>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="tarjeta">
+            <h2>Registro de estudiante</h2>
+
+            <form id="formulario">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+
+                <label for="programa">Programa</label>
+                <input type="text" id="programa">
+
+                <label for="semestre">Semestre</label>
+                <input
+                    type="number"
+                    id="semestre"
+                    min="1"
+                    max="10"
+                >
+
+                <div class="botones">
+                    <button type="submit">
+                        Guardar estudiante
+                    </button>
+
+                    <button type="button" id="eliminar">
+                        Eliminar registro
+                    </button>
+                </div>
+
+            </form>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Estudiante guardado</h2>
+
+            <div id="resultado" class="resultado">
+                No hay información almacenada.
+            </div>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Observaciones</h2>
+
+            <p>
+                La información almacenada con
+                <code>localStorage</code> permanece disponible
+                incluso después de cerrar o recargar el navegador.
+            </p>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Reto</h2>
+
+            <p>
+                Modifica el laboratorio para guardar también
+                el correo electrónico del estudiante.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p>Laboratorio de JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

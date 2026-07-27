@@ -1,0 +1,244 @@
+/* ==========================================
+   LABORATORIO DE JAVASCRIPT
+   Lenguaje de Programación II
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f6f9;
+
+    color: #333333;
+
+    line-height: 1.6;
+}
+
+/* ==========================================
+   ENCABEZADO
+========================================== */
+
+.encabezado {
+
+    background-color: #0d6efd;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.nombre-curso {
+
+    font-size: 1rem;
+
+    letter-spacing: 1px;
+}
+
+.encabezado h1 {
+
+    margin-top: 10px;
+
+    font-size: 2rem;
+}
+
+.encabezado h2 {
+
+    margin-top: 10px;
+
+    font-weight: normal;
+}
+
+.objetivo {
+
+    margin-top: 20px;
+
+    max-width: 700px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+/* ==========================================
+   CONTENIDO
+========================================== */
+
+.contenedor {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 40px auto;
+}
+
+/* ==========================================
+   TARJETAS
+========================================== */
+
+.tarjeta {
+
+    background: white;
+
+    border-radius: 10px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.tarjeta h2 {
+
+    margin-bottom: 15px;
+
+    color: #0d6efd;
+}
+
+/* ==========================================
+   BOTÓN
+========================================== */
+
+button {
+
+    margin-top: 20px;
+
+    padding: 12px 24px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #0d6efd;
+
+    color: white;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+button:hover {
+
+    background-color: #0b5ed7;
+}
+
+button + button{
+
+    margin-left: 10px;
+
+    background-color: #6c757d;
+}
+
+button + button:hover{
+
+    background-color: #5c636a;
+}
+
+/* ==========================================
+   RESULTADO
+========================================== */
+
+.resultado {
+
+    margin-top: 15px;
+
+    padding: 20px;
+
+    background-color: #eef4ff;
+
+    border-left: 5px solid #0d6efd;
+
+    min-height: 80px;
+
+    white-space: pre-line;
+}
+
+/* ==========================================
+   PIE DE PÁGINA
+========================================== */
+
+.pie-pagina {
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: #777;
+}
+
+/* ==========================================
+   TABLAS
+========================================== */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 10px;
+}
+
+th,
+td {
+
+    border: 1px solid #cccccc;
+
+    padding: 10px;
+
+    text-align: left;
+}
+
+th {
+
+    background-color: #0d6efd;
+
+    color: white;
+}
+
+tr:nth-child(even) {
+
+    background-color: #f8f9fa;
+}
+
+/* ==========================================
+   CAMPOS DE ENTRADA
+========================================== */
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.botones {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.botones button {
+    margin-top: 0;
+}

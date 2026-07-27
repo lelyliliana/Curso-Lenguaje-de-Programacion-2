@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Laboratorio 12 - Formularios</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="encabezado">
+
+<p class="nombre-curso">
+
+Lenguaje de Programación II
+
+</p>
+
+<h1>Laboratorio 12</h1>
+
+<h2>Formularios</h2>
+
+<p class="objetivo">
+
+Capturar y validar información mediante formularios HTML.
+
+</p>
+
+</header>
+
+<main class="contenedor">
+
+<section class="tarjeta">
+
+<h2>Registro de estudiante</h2>
+
+<form id="formulario">
+
+<label>
+
+Nombre
+
+</label>
+
+<input
+type="text"
+id="nombre">
+
+<label>
+
+Programa
+
+</label>
+
+<input
+type="text"
+id="programa">
+
+<label>
+
+Semestre
+
+</label>
+
+<input
+type="number"
+id="semestre"
+min="1"
+max="10">
+
+<br><br>
+
+<button type="submit">
+
+Registrar
+
+</button>
+
+<button
+type="reset"
+id="limpiar">
+
+Limpiar
+
+</button>
+
+</form>
+
+</section>
+
+<section class="tarjeta">
+
+<h2>Resultado</h2>
+
+<div
+id="resultado"
+class="resultado">
+
+Esperando registro...
+
+</div>
+
+</section>
+
+<section class="tarjeta">
+
+<h2>Reto</h2>
+
+<p>
+
+Agregar un campo para el correo electrónico y validarlo.
+
+</p>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
