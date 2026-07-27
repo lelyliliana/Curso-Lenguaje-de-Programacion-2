@@ -1,0 +1,18 @@
+# Linux
+*~
+
+# VS Code
+.vscode/
+
+# Archivos temporales
+*.tmp
+*.swp
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
