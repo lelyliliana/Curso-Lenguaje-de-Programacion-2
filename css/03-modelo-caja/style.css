@@ -1,0 +1,342 @@
+/* =======================================================
+   RESET
+======================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =======================================================
+   VARIABLES
+======================================================= */
+
+:root {
+
+    --color-primario: #1f3c5c;
+    --color-secundario: #0056b3;
+
+    --color-fondo: #f4f4f4;
+    --color-superficie: #ffffff;
+
+    --color-texto: #222222;
+
+}
+
+
+/* =======================================================
+   ESTILOS GENERALES
+======================================================= */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: var(--color-fondo);
+
+    color: var(--color-texto);
+
+    line-height: 1.6;
+
+}
+
+
+/* =======================================================
+   ENCABEZADO
+======================================================= */
+
+header {
+
+    background-color: var(--color-superficie);
+
+    padding: 30px;
+
+}
+
+
+/* =======================================================
+   NAVEGACIÓN
+======================================================= */
+
+nav {
+
+    margin-top: 20px;
+
+}
+
+nav a {
+
+    color: var(--color-secundario);
+
+    text-decoration: none;
+
+}
+
+nav a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =======================================================
+   CONTENIDO PRINCIPAL
+======================================================= */
+
+main {
+
+    background-color: var(--color-superficie);
+
+    padding: 30px;
+
+}
+
+
+/* =======================================================
+   TÍTULOS
+======================================================= */
+
+h1,
+h2,
+h3 {
+
+    color: var(--color-primario);
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =======================================================
+   PÁRRAFOS
+======================================================= */
+
+p {
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =======================================================
+   SECCIONES
+======================================================= */
+
+section {
+
+    margin-bottom: 40px;
+
+}
+
+article {
+
+    margin-top: 25px;
+
+}
+
+
+/* =======================================================
+   TABLAS
+======================================================= */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+
+}
+
+th,
+td {
+
+    padding: 12px;
+
+    text-align: left;
+
+    border: 1px solid #cccccc;
+
+}
+
+caption {
+
+    margin-bottom: 10px;
+
+    font-weight: bold;
+
+}
+
+
+/* =======================================================
+   LISTAS
+======================================================= */
+
+ul,
+ol,
+dl {
+
+    margin-left: 30px;
+
+    margin-bottom: 20px;
+
+}
+
+li {
+
+    margin-bottom: 8px;
+
+}
+
+dt {
+
+    font-weight: bold;
+
+    margin-top: 12px;
+
+}
+
+dd {
+
+    margin-left: 20px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* =======================================================
+   FORMULARIOS
+======================================================= */
+
+form {
+
+    margin-top: 20px;
+
+}
+
+label {
+
+    display: inline-block;
+
+    margin-bottom: 6px;
+
+}
+
+input,
+textarea,
+select {
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin-bottom: 15px;
+
+    font: inherit;
+
+}
+
+textarea {
+
+    resize: vertical;
+
+}
+
+
+/* =======================================================
+   BOTONES
+======================================================= */
+
+button {
+
+    padding: 12px 20px;
+
+    cursor: pointer;
+
+}
+
+
+/* =======================================================
+   IMÁGENES Y MULTIMEDIA
+======================================================= */
+
+img,
+video,
+audio {
+
+    max-width: 100%;
+
+}
+
+img {
+
+    border: 3px solid var(--color-primario);
+
+    margin-top: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+video,
+audio {
+
+    margin-top: 15px;
+
+}
+
+
+/* =======================================================
+   ELEMENTOS AVANZADOS
+======================================================= */
+
+details {
+
+    margin-bottom: 15px;
+
+}
+
+summary {
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+}
+
+progress,
+meter {
+
+    width: 100%;
+
+    margin-top: 10px;
+
+}
+
+
+/* =======================================================
+   PIE DE PÁGINA
+======================================================= */
+
+footer {
+
+    background-color: var(--color-superficie);
+
+    padding: 30px;
+
+}
+
+
+/* =======================================================
+   SEPARADORES
+======================================================= */
+
+hr {
+
+    margin: 30px 0;
+
+}

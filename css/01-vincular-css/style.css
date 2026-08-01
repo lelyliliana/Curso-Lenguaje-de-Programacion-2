@@ -1,0 +1,48 @@
+/* =======================================================
+   PRIMERA HOJA DE ESTILOS
+======================================================= */
+
+/*
+    Este archivo tiene un único propósito:
+
+    Comprobar que el documento HTML está correctamente
+    conectado con la hoja de estilos CSS.
+
+    En los siguientes laboratorios construiremos
+    progresivamente el diseño del Proyecto Web Personal.
+*/
+
+
+/* =======================================================
+   DOCUMENTO
+======================================================= */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+/* =======================================================
+   TÍTULOS
+======================================================= */
+
+h1,
+h2,
+h3 {
+
+    color: steelblue;
+
+}
+
+
+/* =======================================================
+   ENLACES
+======================================================= */
+
+a {
+
+    color: darkred;
+
+}

@@ -1,19 +1,34 @@
 # Curso Lenguaje de Programación II
 
-## Laboratorios interactivos de HTML, CSS, JavaScript y React
+Repositorio oficial de ejemplos y laboratorios utilizados en el curso **Lenguaje de Programación II**.
 
-Repositorio desarrollado como material de apoyo para el curso **Lenguaje de Programación II**, orientado al aprendizaje práctico mediante laboratorios y proyectos.
+El material se encuentra organizado de forma progresiva para que el estudiante construya un **Proyecto Web Personal** desde cero utilizando HTML, CSS, JavaScript y React.
 
 ---
 
-## Objetivos
+# Objetivo del repositorio
 
-Este repositorio tiene como propósito:
+Proporcionar ejemplos prácticos y laboratorios guiados que permitan comprender el desarrollo de aplicaciones web modernas mediante una metodología basada en proyectos.
 
-- Aprender haciendo.
-- Desarrollar aplicaciones paso a paso.
-- Comprender los fundamentos del desarrollo Front-End.
-- Construir proyectos reales utilizando HTML, CSS, JavaScript y React.
+Cada laboratorio representa una nueva versión del mismo proyecto, evitando ejercicios aislados y favoreciendo un aprendizaje progresivo.
+
+---
+
+# Metodología
+
+El curso está organizado en cuatro módulos principales.
+
+```text
+HTML
+   ↓
+CSS
+   ↓
+JavaScript
+   ↓
+React
+```
+
+Durante todo el curso se desarrollará un único proyecto que evolucionará gradualmente.
 
 ---
 
@@ -21,84 +36,74 @@ Este repositorio tiene como propósito:
 
 ## HTML
 
-Laboratorios orientados a la construcción de páginas web.
+Construcción de la estructura del Proyecto Web Personal.
 
-- Estructura básica
-- Encabezados
-- Párrafos
-- Enlaces
-- Imágenes
-- Tablas
-- Formularios
-- Proyecto
+```text
+01 Estructura HTML
+02 Sobre mí
+03 Menú de navegación
+04 Galería
+05 Formación académica
+06 Habilidades e intereses
+07 Contacto
+08 Presentación multimedia
+09 HTML avanzado
+10 Publicación del proyecto
+```
 
 ---
 
 ## CSS
 
-Laboratorios para el diseño de interfaces.
+Diseño visual del Proyecto Web Personal.
 
-- Selectores
-- Box Model
-- Flexbox
-- Grid
-- Responsive Design
-- Animaciones
-- Proyecto
+```text
+01 Vinculación de CSS
+02 Identidad visual
+03 Modelo de caja
+04 Componentes visuales
+05 Menú de navegación
+06 Flexbox
+07 Grid
+08 Formularios
+09 Diseño adaptable
+10 Publicación
+```
 
 ---
 
 ## JavaScript
 
-16 laboratorios interactivos.
+Incorporación de comportamiento e interacción.
 
-| Laboratorio | Tema |
-|-------------|------|
-| 01 | Variables |
-| 02 | Tipos de datos |
-| 03 | Operadores |
-| 04 | Entrada y salida |
-| 05 | Condicionales |
-| 06 | Ciclos |
-| 07 | Funciones |
-| 08 | Arrays |
-| 09 | Objetos |
-| 10 | DOM |
-| 11 | Eventos |
-| 12 | Formularios |
-| 13 | Local Storage |
-| 14 | Fetch |
-| 15 | Consumo de APIs |
-| 16 | Proyecto Integrador |
+```text
+01 Variables
+02 Tipos de datos
+03 Operadores
+04 Entrada y salida
+05 Condicionales
+06 Ciclos
+07 Funciones
+08 Arrays
+09 Objetos
+10 DOM
+11 Eventos
+12 Formularios
+13 Fetch
+14 Consumo de APIs
+15 LocalStorage
+16 Proyecto integrador
+```
 
 ---
 
 ## React
 
-Laboratorios para el desarrollo de aplicaciones SPA.
+Desarrollo de aplicaciones web basadas en componentes.
 
----
-
-## Proyectos
-
-Proyectos completos para reforzar los conocimientos adquiridos.
-
----
-
-## Desafíos
-
-Ejercicios propuestos para desarrollar de manera autónoma.
-
----
-
-# Tecnologías utilizadas
-
-- HTML5
-- CSS3
-- JavaScript ES6+
-- React
-- Git
-- GitHub
+```text
+Próximamente...
+```
 
 ---
 
@@ -107,52 +112,58 @@ Ejercicios propuestos para desarrollar de manera autónoma.
 ```text
 Curso-Lenguaje-de-Programacion-2
 
-html/
-
-css/
-
-javascript/
-
-react/
-
-docs/
+├── html
+├── css
+├── javascript
+├── react
+└── README.md
 ```
 
 ---
 
-# Metodología
+# Proyecto desarrollado durante el curso
 
-Cada laboratorio contiene:
+El estudiante construirá progresivamente un **Proyecto Web Personal**.
 
-- Objetivo.
-- Explicación.
-- Código fuente.
-- Aplicación funcional.
-- Reto.
-- Documentación.
+El proyecto incluirá:
 
----
+- Información personal.
+- Formación académica.
+- Habilidades.
+- Proyectos.
+- Galería.
+- Multimedia.
+- Formulario de contacto.
+- Publicación web.
 
-# Público objetivo
-
-- Estudiantes de Ingeniería de Sistemas.
-- Docentes.
-- Personas interesadas en aprender desarrollo web.
+Cada módulo incorporará nuevas características sin comenzar nuevamente desde cero.
 
 ---
 
-# Autor
+# Requisitos
 
-**Leli Liliana Díaz Izquierdo**
+- Navegador web actualizado.
+- Visual Studio Code (o editor equivalente).
+- Git.
+- GitHub.
+- Netlify (para la publicación).
 
-Ingeniera de Sistemas
+---
 
-Docente Universitaria
+# Buenas prácticas aplicadas
 
-Corporación Universitaria Remington
+Durante el desarrollo del curso se promueve el uso de buenas prácticas como:
+
+- HTML semántico.
+- Accesibilidad.
+- Separación entre estructura, presentación y comportamiento.
+- Organización de carpetas.
+- Código correctamente indentado.
+- Reutilización de componentes.
+- Publicación mediante GitHub y Netlify.
 
 ---
 
 # Licencia
 
-Este material fue desarrollado con fines educativos.
+Este repositorio tiene fines académicos y puede utilizarse como material de apoyo para el aprendizaje del desarrollo web.

@@ -1,4 +1,4 @@
-# Laboratorio 01: Estructura básica de un documento HTML
+# Laboratorio 01: Creación de la estructura inicial del Proyecto Web
 
 **Nivel:** Básico
 
@@ -10,72 +10,86 @@
 
 **Concepto principal:**
 
-Comprender la estructura mínima que debe tener un documento HTML5.
+Construir correctamente la estructura inicial de un proyecto web utilizando HTML5.
 
 ---
 
-## Objetivo
+# Objetivo
 
-Construir correctamente la estructura básica de una página web utilizando HTML5 e identificar la función de cada uno de sus elementos principales.
-
----
-
-## Descripción
-
-Todo documento HTML debe seguir una estructura definida para que los navegadores puedan interpretarlo correctamente.
-
-En este laboratorio se construye una página web sencilla utilizando los elementos fundamentales que forman parte de cualquier documento HTML.
+Construir la primera versión del Proyecto Web Personal implementando la estructura básica requerida por el estándar HTML5.
 
 ---
 
-## Evolución del proyecto
+# Descripción
 
-En este laboratorio se construye la base del sitio web.
+Todo sitio web comienza con una estructura HTML correctamente organizada.
 
-| Funcionalidad | Estado |
-|--------------|:------:|
-| Estructura HTML | ✅ |
-| Encabezados y texto | ⏳ |
-| Enlaces | ⏳ |
-| Imágenes | ⏳ |
-| Listas | ⏳ |
-| Tablas | ⏳ |
-| Formularios | ⏳ |
-| Multimedia | ⏳ |
-| Elementos semánticos | ⏳ |
-| HTML avanzado | ⏳ |
-| Accesibilidad | ⏳ |
-| Proyecto final | ⏳ |
+En este laboratorio iniciaremos el desarrollo del **Proyecto Web Personal**, el cual evolucionará durante todo el curso hasta convertirse en un sitio web completo.
+
+El propósito de esta práctica es construir la base del proyecto utilizando la estructura mínima de un documento HTML5 y aplicar buenas prácticas de organización e indentación del código.
 
 ---
 
-## Conceptos trabajados
+# Evolución del proyecto
+
+En este laboratorio se crea la primera versión del Proyecto Web Personal.
+
+## Al finalizar esta práctica el sitio contará con:
+
+- ✅ Estructura HTML5.
+- ✅ Encabezado principal.
+- ✅ Información básica del proyecto.
+- ✅ Pie de página.
+
+## En los siguientes laboratorios se incorporarán:
+
+- ⏳ Información personal.
+- ⏳ Menú de navegación.
+- ⏳ Galería de imágenes.
+- ⏳ Formación académica.
+- ⏳ Formulario de contacto.
+- ⏳ Multimedia.
+- ⏳ Accesibilidad.
+- ⏳ Proyecto final.
+
+---
+
+# Competencia
+
+Al finalizar este laboratorio el estudiante será capaz de construir correctamente la estructura inicial de un documento HTML5 que sirva como base para el desarrollo de un sitio web.
+
+---
+
+# Conceptos trabajados
 
 - HTML5
 - `<!DOCTYPE html>`
 - `<html>`
 - `<head>`
 - `<body>`
-- `<meta>`
+- `<meta charset>`
+- `<meta viewport>`
 - `<title>`
+- `<header>`
+- `<main>`
+- `<section>`
+- `<footer>`
 - Comentarios
 - Indentación
-- Estructura semántica básica
 
 ---
 
-## Estructura mínima
+# Estructura mínima
 
 ```html
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
 
     <meta charset="UTF-8">
 
-    <title>Mi página</title>
+    <title>Proyecto Web Personal</title>
 
 </head>
 
@@ -88,66 +102,67 @@ En este laboratorio se construye la base del sitio web.
 
 ---
 
-## Elementos principales
+# Funcionamiento del laboratorio
 
-| Elemento | Descripción |
-|----------|-------------|
-| `<!DOCTYPE html>` | Indica que el documento utiliza HTML5. |
-| `<html>` | Contiene todo el documento HTML. |
-| `<head>` | Información para el navegador. |
-| `<body>` | Contenido visible para el usuario. |
-| `<title>` | Título mostrado en la pestaña del navegador. |
-| `<meta charset>` | Define la codificación de caracteres. |
-| `<meta viewport>` | Permite una correcta visualización en dispositivos móviles. |
+Durante esta práctica el estudiante:
 
----
-
-## Funcionamiento del laboratorio
-
-1. Se crea un documento HTML5.
-2. Se define el idioma del documento.
-3. Se configura la codificación de caracteres.
-4. Se establece el título de la página.
-5. Se organiza el contenido utilizando elementos semánticos.
-6. El navegador interpreta la estructura y presenta la página.
+1. Crea un nuevo documento HTML5.
+2. Define el idioma del documento.
+3. Configura la codificación de caracteres.
+4. Establece el título de la página.
+5. Organiza el contenido mediante una estructura semántica básica.
+6. Construye la primera versión del Proyecto Web Personal.
 
 ---
 
-## Archivos
+# Archivos
 
 | Archivo | Descripción |
 |---------|-------------|
-| `index.html` | Documento HTML del laboratorio. |
+| `index.html` | Contiene la primera versión del Proyecto Web Personal. |
 | `README.md` | Documentación del laboratorio. |
 
 ---
 
-## Cómo ejecutar el laboratorio
+# Cómo ejecutar el laboratorio
 
-1. Abra la carpeta `html/estructuraHTML`.
-2. Abra el archivo `index.html` en un navegador web.
+1. Abra la carpeta `html/01-estructura-html`.
+2. Ejecute el archivo `index.html` en un navegador web.
 3. Observe la estructura del documento.
-4. Revise el código fuente y compare cada elemento con su explicación.
+4. Revise el código HTML y analice la función de cada elemento.
 
 ---
 
-## Reto
+# Buenas prácticas
 
-Realice las siguientes modificaciones:
-
-- Cambie el título de la página.
-- Agregue su nombre como autor del documento.
-- Cree una nueva sección llamada **Acerca del laboratorio**.
-- Agregue un párrafo explicando qué aprendió.
-
----
-
-## Resultado esperado
-
-El laboratorio debe mostrar una página HTML correctamente estructurada y organizada utilizando los elementos fundamentales del estándar HTML5.
+- Declarar siempre `<!DOCTYPE html>`.
+- Definir el idioma mediante `lang`.
+- Configurar la codificación UTF-8.
+- Mantener una correcta indentación.
+- Utilizar comentarios únicamente cuando aporten claridad al código.
+- Organizar el contenido utilizando elementos semánticos.
 
 ---
 
-## Conclusiones
+# Reto
 
-La estructura básica constituye el punto de partida para cualquier página web. Comprender el propósito de cada uno de sus elementos facilita el desarrollo de documentos organizados, legibles y compatibles con los navegadores modernos.
+Personalice el Proyecto Web Personal reemplazando los textos de ejemplo por la información correspondiente a su proyecto.
+
+Defina:
+
+- Nombre del proyecto.
+- Tema del sitio web.
+- Objetivo.
+- Público objetivo.
+
+---
+
+# Resultado esperado
+
+Al finalizar el laboratorio el estudiante dispondrá de la estructura inicial de su Proyecto Web Personal, la cual servirá como base para todas las prácticas posteriores del curso.
+
+---
+
+# Conclusiones
+
+Todo proyecto web inicia con una estructura HTML correctamente organizada. Una buena base facilita el crecimiento del sitio y permite incorporar posteriormente estilos con CSS e interactividad mediante JavaScript sin necesidad de reconstruir el proyecto.
