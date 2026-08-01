@@ -120,4 +120,7 @@ Este proyecto integra:
 
 # Licencia
 
+**Docente:** Leli Liliana Díaz Izqierdo
+Curso: Lenguaje de Programación II 
+
 Material desarrollado con fines educativos para apoyar el aprendizaje del lenguaje JavaScript en el curso **Lenguaje de Programación II**.
