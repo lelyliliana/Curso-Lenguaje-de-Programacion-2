@@ -169,6 +169,27 @@ p {
     padding: 20px;
 }
 
+/* =======================================================
+   GRID: GALERÍA
+======================================================= */
+
+.contenedor-galeria {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+
+    margin-top: 20px;
+
+}
+
+.contenedor-galeria figure {
+
+    margin: 0;
+
+}
 
 /* =======================================================
    TABLAS
@@ -229,33 +250,53 @@ dd {
 ======================================================= */
 
 form {
+    max-width: 700px;
     margin-top: 20px;
+}
+
+form p {
+    margin-bottom: 18px;
 }
 
 label {
     display: inline-block;
     margin-bottom: 6px;
+    font-weight: bold;
 }
 
 input,
 textarea,
 select {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 12px;
 
     font: inherit;
+    color: var(--color-texto);
+    background-color: var(--color-superficie);
 
     border: 1px solid var(--color-borde);
-    border-radius: 6px;
+    border-radius: 8px;
+
+    transition:
+        border-color 0.3s,
+        box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--color-secundario);
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.15);
+    outline: none;
 }
 
 input[type="checkbox"] {
     width: auto;
-    margin-right: 6px;
+    margin-right: 8px;
 }
 
 textarea {
+    min-height: 140px;
     resize: vertical;
 }
 
@@ -267,8 +308,11 @@ textarea {
 button {
     padding: 12px 20px;
     margin-right: 8px;
+    margin-bottom: 8px;
 
     font: inherit;
+    font-weight: bold;
+
     color: #ffffff;
     background-color: var(--color-secundario);
 
@@ -277,13 +321,29 @@ button {
 
     cursor: pointer;
 
-    transition: background-color 0.3s;
+    transition:
+        background-color 0.3s,
+        transform 0.2s,
+        box-shadow 0.2s;
 }
 
 button:hover {
     background-color: var(--color-primario);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
+button:active {
+    transform: scale(0.98);
+}
+
+button[type="reset"] {
+    background-color: #5f6873;
+}
+
+button[type="reset"]:hover {
+    background-color: #3f4750;
+}
 
 /* =======================================================
    IMÁGENES Y MULTIMEDIA
@@ -296,10 +356,13 @@ audio {
 }
 
 img {
+
+    width: 100%;
+
     height: auto;
-    margin-top: 15px;
-    margin-bottom: 20px;
+
     border-radius: 10px;
+
 }
 
 .contenedor-proyectos img {
@@ -366,4 +429,96 @@ hr {
     margin: 30px 0;
     border: none;
     border-top: 1px solid var(--color-borde);
+}
+
+/* =======================================================
+   DISEÑO RESPONSIVE
+======================================================= */
+
+@media (max-width: 900px) {
+
+    body > header,
+    main,
+    body > footer {
+        width: calc(100% - 30px);
+        margin: 15px auto;
+    }
+
+    body > header,
+    main,
+    body > footer {
+        padding: 22px;
+    }
+
+    .contenedor-proyectos {
+        flex-direction: column;
+    }
+
+    .contenedor-proyectos article {
+        flex: 1 1 auto;
+    }
+
+    .contenedor-galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    video,
+    audio {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    body > header,
+    main,
+    body > footer {
+        width: calc(100% - 20px);
+        margin: 10px auto;
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .contenedor-galeria {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    input[type="checkbox"] {
+        width: auto;
+    }
 }

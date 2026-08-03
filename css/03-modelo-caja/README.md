@@ -48,7 +48,7 @@ Después de este laboratorio contará con:
 
 - ✅ Espacios internos organizados.
 - ✅ Separación entre secciones.
-- ✅ Bordes.
+- ✅ Bordes en imágenes y tablas.
 - ✅ Distribución más limpia.
 - ✅ Mejor legibilidad.
 
@@ -125,10 +125,8 @@ En este ejemplo se agrega espacio entre una sección y la siguiente.
 El relleno representa el espacio entre el contenido y el borde del elemento.
 
 ```css
-header {
-
+body > header {
     padding: 30px;
-
 }
 ```
 
@@ -174,11 +172,15 @@ Durante este laboratorio incorporaremos la siguiente regla general:
 
 ```css
 * {
-
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-
 }
 ```
+
+Esta regla elimina los márgenes y rellenos predeterminados del navegador y establece un cálculo de dimensiones más predecible mediante `border-box`.
+
+Con esta configuración, el ancho y el alto de un elemento incluyen el contenido, el relleno y el borde, facilitando el diseño y evitando cálculos innecesarios.
 
 Con esta configuración, el ancho y el alto de un elemento incluyen el contenido, el relleno y el borde, facilitando el diseño y evitando cálculos innecesarios.
 
@@ -263,9 +265,11 @@ Después de experimentar, restaure una configuración equilibrada.
 
 # Resultado esperado
 
-Al finalizar el laboratorio, el Proyecto Web Personal presentará una distribución más organizada gracias al uso adecuado de márgenes, rellenos y bordes.
+Al finalizar el laboratorio, el Proyecto Web Personal presentará una distribución más organizada gracias al uso adecuado de márgenes, rellenos, bordes y dimensiones.
 
-El contenido será más legible y cada sección estará claramente diferenciada.
+El contenido será más legible, las secciones tendrán una separación adecuada y las imágenes y tablas estarán mejor delimitadas.
+
+La transformación de las secciones en componentes visuales se realizará en el siguiente laboratorio.
 
 ---
 

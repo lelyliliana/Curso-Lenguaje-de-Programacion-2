@@ -47,12 +47,9 @@ body {
    ENCABEZADO
 ======================================================= */
 
-header {
-
+body > header {
     background-color: var(--color-superficie);
-
     padding: 30px;
-
 }
 
 
@@ -317,17 +314,23 @@ meter {
 
 }
 
+/* =======================================================
+   ENCABEZADO Y PIE INTERNOS DE ARTÍCULOS
+======================================================= */
+
+article > header,
+article > footer {
+    background-color: transparent;
+    padding: 0;
+}
 
 /* =======================================================
    PIE DE PÁGINA
 ======================================================= */
 
-footer {
-
+body > footer {
     background-color: var(--color-superficie);
-
     padding: 30px;
-
 }
 
 

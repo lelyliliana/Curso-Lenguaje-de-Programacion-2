@@ -1,0 +1,236 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background-color: #f3f4f6;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: #1d4ed8;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.contenedor {
+  width: min(1100px, 92%);
+  margin-inline: auto;
+}
+
+.encabezado {
+  padding: 56px 0;
+  color: #ffffff;
+  background-color: #1e3a5f;
+}
+
+.encabezado h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+.encabezado p {
+  max-width: 700px;
+  margin: 12px 0 24px;
+}
+
+.encabezado nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.encabezado nav a {
+  padding: 8px 14px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+}
+
+.encabezado nav a:hover,
+.encabezado nav a:focus-visible {
+  color: #1e3a5f;
+  background-color: #ffffff;
+}
+
+main {
+  padding-block: 32px;
+}
+
+.seccion {
+  margin-bottom: 28px;
+  padding: 28px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 8%);
+  scroll-margin-top: 20px;
+}
+
+.seccion h2 {
+  margin-top: 0;
+  color: #1e3a5f;
+}
+
+.cuadricula-proyectos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.tarjeta-proyecto {
+  padding: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.tarjeta-proyecto h3 {
+  margin-top: 0;
+}
+
+.perfil-github {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.perfil-github img {
+  border-radius: 50%;
+}
+
+.enlace-destacado {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.grupo-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 18px;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #1d4ed8;
+  border: 0;
+  border-radius: 6px;
+}
+
+button:hover,
+button:focus-visible {
+  background-color: #1e40af;
+}
+
+.boton-secundario {
+  color: #1f2937;
+  background-color: #e5e7eb;
+}
+
+.boton-secundario:hover,
+.boton-secundario:focus-visible {
+  background-color: #d1d5db;
+}
+
+.estado {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.estado-conectado {
+  color: #166534;
+  background-color: #dcfce7;
+}
+
+.estado-desconectado {
+  color: #991b1b;
+  background-color: #fee2e2;
+}
+
+form {
+  max-width: 650px;
+}
+
+.campo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.campo-formulario label {
+  font-weight: bold;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #9ca3af;
+  border-radius: 6px;
+}
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+  outline: 3px solid rgb(29 78 216 / 25%);
+  border-color: #1d4ed8;
+}
+
+.mensaje-exito {
+  padding: 12px;
+  color: #166534;
+  background-color: #dcfce7;
+  border-radius: 6px;
+}
+
+.pie-pagina {
+  padding: 24px 0;
+  color: #ffffff;
+  background-color: #111827;
+}
+
+.pie-pagina .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.pie-pagina a {
+  color: #ffffff;
+}
+
+@media (max-width: 760px) {
+  .cuadricula-proyectos {
+    grid-template-columns: 1fr;
+  }
+
+  .perfil-github {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .pie-pagina .contenedor {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

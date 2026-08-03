@@ -55,14 +55,11 @@ body {
    CONTENEDOR PRINCIPAL
 ======================================================= */
 
-header,
+body > header,
 main,
-footer {
-
+body > footer {
     max-width: 1200px;
-
     margin: 30px auto;
-
 }
 
 
@@ -70,28 +67,13 @@ footer {
    ENCABEZADO
 ======================================================= */
 
-header {
-
+body > header {
     background-color: var(--color-superficie);
-
     padding: 30px;
-
     border-radius: 12px;
-
-    box-shadow: 0 4px 12px rgba(0,0,0,.10);
-
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
 }
 
-
-/* =======================================================
-   NAVEGACIÓN
-======================================================= */
-
-nav {
-
-    margin-top: 20px;
-
-}
 
 /* =======================================================
    NAVEGACIÓN
@@ -182,19 +164,12 @@ p {
    COMPONENTES (CARDS)
 ======================================================= */
 
-section,
-article {
-
+.card {
     background-color: #fafafa;
-
     border: 1px solid var(--color-borde);
-
     border-radius: 10px;
-
     padding: 25px;
-
     margin-bottom: 30px;
-
 }
 
 
@@ -376,21 +351,28 @@ meter {
 
 }
 
+/* =======================================================
+   ENCABEZADO Y PIE INTERNOS DE ARTÍCULOS
+======================================================= */
+
+article > header,
+article > footer {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
 
 /* =======================================================
    PIE DE PÁGINA
 ======================================================= */
 
-footer {
-
+body > footer {
     background-color: var(--color-superficie);
-
     padding: 30px;
-
     border-radius: 12px;
-
-    box-shadow: 0 4px 12px rgba(0,0,0,.10);
-
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
 }
 
 

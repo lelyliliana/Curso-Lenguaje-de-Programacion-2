@@ -272,52 +272,60 @@ El valor define el resultado aplicado.
 
 # Hoja de estilos inicial
 
+La primera hoja de estilos contiene solamente algunas reglas sencillas para comprobar que CSS se encuentra correctamente vinculado.
+
 ```css
-/* Configuración general del documento */
+/* =======================================================
+   PRIMERA HOJA DE ESTILOS
+======================================================= */
+
+/*
+    Este archivo tiene un único propósito:
+
+    Comprobar que el documento HTML está correctamente
+    conectado con la hoja de estilos CSS.
+
+    En los siguientes laboratorios construiremos
+    progresivamente el diseño del Proyecto Web Personal.
+*/
+
+
+/* =======================================================
+   DOCUMENTO
+======================================================= */
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #222222;
 }
 
 
-/* Encabezado principal */
-
-header {
-    background-color: #ffffff;
-}
-
-
-/* Contenido principal */
-
-main {
-    background-color: #ffffff;
-}
-
-
-/* Títulos */
+/* =======================================================
+   TÍTULOS
+======================================================= */
 
 h1,
 h2,
 h3 {
-    color: #1f3c5c;
+    color: steelblue;
 }
 
 
-/* Enlaces */
+/* =======================================================
+   ENLACES
+======================================================= */
 
 a {
-    color: #0056b3;
-}
-
-
-/* Pie de página */
-
-footer {
-    background-color: #ffffff;
+    color: darkred;
 }
 ```
+
+Al ejecutar el proyecto deben observarse tres cambios:
+
+- La tipografía general utiliza Arial.
+- Los títulos aparecen en color azul.
+- Los enlaces aparecen en color rojo oscuro.
+
+Estas reglas tienen únicamente el propósito de comprobar que el archivo CSS está conectado correctamente. La identidad visual completa se desarrollará en los siguientes laboratorios.
 
 Estos estilos son iniciales.
 
@@ -333,7 +341,7 @@ Un selector de elemento aplica estilos a todas las etiquetas del mismo tipo.
 
 ```css
 body {
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
 }
 ```
 
@@ -343,7 +351,7 @@ Otro ejemplo:
 
 ```css
 a {
-    color: #0056b3;
+    color: darkred;
 }
 ```
 
@@ -359,7 +367,7 @@ Cuando varios elementos compartirán las mismas propiedades, pueden agruparse me
 h1,
 h2,
 h3 {
-    color: #1f3c5c;
+    color: steelblue;
 }
 ```
 
@@ -426,14 +434,15 @@ Durante esta práctica, el estudiante:
 # Cómo ejecutar el laboratorio
 
 1. Abra la carpeta `css/01-vincular-css`.
-2. Verifique que `index.html` y `style.css` estén en la misma carpeta.
-3. Abra `index.html` en el navegador.
-4. Compruebe que el fondo general sea gris claro.
-5. Verifique que los títulos aparezcan en azul oscuro.
-6. Compruebe que los enlaces aparezcan en azul.
-7. Cambie temporalmente el color de un título.
-8. Actualice el navegador.
-9. Confirme que el cambio sea visible.
+2. Verifique que `index.html` y `style.css` se encuentren en la misma carpeta.
+3. Abra el archivo `index.html` en el navegador.
+4. Compruebe que la tipografía general utilice Arial.
+5. Verifique que los títulos aparezcan en color azul.
+6. Compruebe que los enlaces aparezcan en color rojo oscuro.
+7. Modifique temporalmente el color de un título en `style.css`.
+8. Guarde el archivo.
+9. Actualice el navegador.
+10. Confirme que el cambio sea visible.
 
 ---
 

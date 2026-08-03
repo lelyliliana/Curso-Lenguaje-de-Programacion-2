@@ -6,268 +6,199 @@
 
 **Requisitos previos:**
 
-- Laboratorio 01: Vinculación de la hoja de estilos.
-- Contar con el Proyecto Web Personal desarrollado en HTML.
-- Tener correctamente vinculado el archivo `style.css`.
+- Haber completado el Laboratorio 01.
+- Tener vinculada correctamente la hoja `style.css`.
+- Contar con la versión completa del Proyecto Web Personal.
+- Comprender la estructura básica de una regla CSS.
 
 **Concepto principal:**
 
-Definir la identidad visual inicial del Proyecto Web Personal mediante colores, tipografía y estilos generales.
+Definir la identidad visual inicial del Proyecto Web Personal mediante colores, tipografía y variables CSS.
 
 ---
 
 # Objetivo
 
-Construir la primera versión visual del Proyecto Web Personal aplicando una paleta de colores, una tipografía coherente y reglas generales que mejoren la presentación del sitio.
+Construir una identidad visual básica para el Proyecto Web Personal mediante una paleta de colores, una tipografía general y variables CSS reutilizables.
 
 ---
 
 # Descripción
 
-En el laboratorio anterior se comprobó que el navegador puede cargar correctamente una hoja de estilos.
+En el laboratorio anterior se vinculó correctamente una hoja de estilos externa con el documento HTML.
 
-En este laboratorio comenzaremos a construir la identidad visual del sitio.
+En esta práctica se comenzará a construir la identidad visual del sitio.
 
-Se definirán:
+El estudiante definirá:
 
-- Los colores principales.
-- La tipografía.
-- La apariencia general.
-- Los estilos básicos para títulos.
-- Los enlaces.
-- La presentación inicial de imágenes y contenido multimedia.
+- Un color principal.
+- Un color secundario.
+- Un color de fondo.
+- Un color para las superficies.
+- Un color para el texto.
+- Una tipografía general.
+- Una altura de línea adecuada.
 
-Además, se introducirán las **variables CSS**, una herramienta que facilita la reutilización y el mantenimiento de los estilos.
+También se introducirán las variables CSS, que permiten almacenar valores reutilizables y mantener una apariencia consistente en todo el proyecto.
+
+En este laboratorio todavía no se trabajará con márgenes, rellenos, bordes ni distribución avanzada. Estos conceptos serán estudiados en los siguientes laboratorios.
 
 ---
 
 # Evolución del proyecto
 
-Hasta este momento el Proyecto Web Personal cuenta con:
+Hasta este momento el Proyecto Web Personal incluye:
 
-- ✅ Hoja de estilos vinculada.
-- ✅ Estilos básicos de comprobación.
+- ✅ Estructura HTML completa.
+- ✅ Hoja de estilos externa.
+- ✅ Vinculación entre HTML y CSS.
 
 Después de este laboratorio contará con:
 
-- ✅ Identidad visual inicial.
 - ✅ Paleta de colores.
-- ✅ Tipografía definida.
+- ✅ Tipografía general.
+- ✅ Colores consistentes.
 - ✅ Variables CSS.
-- ✅ Mejor legibilidad.
-- ✅ Apariencia consistente.
+- ✅ Mayor legibilidad.
+- ✅ Identidad visual inicial.
 
-Próximamente trabajaremos:
+Próximamente se incorporarán:
 
 - ⏳ Modelo de caja.
-- ⏳ Espaciado.
+- ⏳ Márgenes.
+- ⏳ Rellenos.
 - ⏳ Bordes.
-- ⏳ Contenedores.
+- ⏳ Componentes visuales.
+- ⏳ Flexbox.
+- ⏳ Grid.
+- ⏳ Diseño adaptable.
 
 ---
 
 # Competencia
 
-Al finalizar este laboratorio, el estudiante será capaz de definir la identidad visual básica de un sitio web mediante el uso de variables CSS, colores y tipografía.
+Al finalizar este laboratorio, el estudiante será capaz de definir y aplicar una identidad visual básica mediante variables CSS, colores y propiedades tipográficas.
 
 ---
 
 # Conceptos trabajados
 
-- Variables CSS.
 - `:root`
+- Variables CSS.
+- `var()`
 - `font-family`
-- `color`
 - `background-color`
+- `color`
 - `line-height`
 - `text-decoration`
 - `max-width`
-- Reset básico.
-- Herencia.
+- Paleta de colores.
+- Contraste.
+- Consistencia visual.
 
 ---
 
 # ¿Qué es una identidad visual?
 
-La identidad visual es el conjunto de características gráficas que permiten reconocer un sitio web.
+La identidad visual corresponde al conjunto de características gráficas que permiten reconocer un sitio web.
 
-Algunos de sus componentes son:
+Puede incluir:
 
 - Colores.
-- Tipografía.
-- Espaciado.
-- Iconografía.
+- Tipografías.
+- Fondos.
+- Estilo de títulos.
+- Apariencia de enlaces.
+- Organización visual.
 - Imágenes.
-- Estilo general.
+- Iconos.
 
-Durante este laboratorio construiremos una primera versión de esa identidad.
-
----
-
-# Variables CSS
-
-Las variables permiten almacenar valores que pueden reutilizarse en toda la hoja de estilos.
-
-Ejemplo:
-
-```css
-:root {
-
-    --color-primario: #1f3c5c;
-
-    --color-secundario: #0056b3;
-
-}
-```
-
-Posteriormente pueden utilizarse mediante la función:
-
-```css
-color: var(--color-primario);
-```
-
-Esto evita repetir el mismo valor en diferentes reglas y facilita realizar cambios futuros.
+En este laboratorio se construirá una identidad visual básica mediante colores y tipografía.
 
 ---
 
 # Paleta de colores
 
-La hoja de estilos utilizará inicialmente la siguiente paleta:
+Una paleta de colores es un conjunto limitado de colores utilizados de forma consistente dentro de un sitio web.
 
-| Variable | Color | Uso |
-|----------|--------|-----|
-| `--color-primario` | Azul oscuro | Títulos principales. |
-| `--color-secundario` | Azul | Enlaces. |
-| `--color-fondo` | Gris claro | Fondo del sitio. |
-| `--color-superficie` | Blanco | Encabezados y secciones. |
-| `--color-texto` | Gris oscuro | Texto general. |
+En este proyecto se utilizarán inicialmente los siguientes colores:
 
-Esta paleta puede personalizarse posteriormente.
+```css
+--color-primario: #1f3c5c;
+--color-secundario: #0056b3;
+--color-fondo: #f4f4f4;
+--color-superficie: #ffffff;
+--color-texto: #222222;
+```
+
+Cada color cumple una función específica.
+
+| Variable | Uso |
+|----------|-----|
+| `--color-primario` | Títulos y elementos destacados. |
+| `--color-secundario` | Enlaces y elementos interactivos. |
+| `--color-fondo` | Fondo general de la página. |
+| `--color-superficie` | Encabezado, contenido y pie de página. |
+| `--color-texto` | Texto principal. |
 
 ---
 
-# Tipografía
+# Variables CSS
 
-El sitio utilizará inicialmente:
+Las variables CSS permiten almacenar valores reutilizables.
+
+Se definen generalmente dentro de `:root`.
 
 ```css
-body {
-
-    font-family: Arial, sans-serif;
-
+:root {
+    --color-primario: #1f3c5c;
+    --color-secundario: #0056b3;
 }
 ```
 
-La propiedad `font-family` define la fuente principal utilizada por el documento.
-
-El valor `sans-serif` actúa como alternativa cuando la fuente principal no está disponible.
-
----
-
-# Altura de línea
-
-Para mejorar la legibilidad se utilizará:
+Después pueden utilizarse mediante la función `var()`.
 
 ```css
-body {
-
-    line-height: 1.6;
-
+h1 {
+    color: var(--color-primario);
 }
 ```
 
-Esta propiedad controla el espacio vertical entre líneas de texto.
-
-Un valor adecuado facilita la lectura y evita que el contenido se perciba demasiado compacto.
+Esto evita repetir constantemente los mismos valores.
 
 ---
 
-# Enlaces
+# ¿Qué es :root?
 
-Inicialmente los enlaces utilizarán:
+El selector `:root` representa el elemento raíz del documento.
+
+En un documento HTML corresponde al elemento `<html>`.
+
+Se utiliza comúnmente para declarar variables globales.
 
 ```css
-a {
-
-    color: var(--color-secundario);
-
-    text-decoration: none;
-
+:root {
+    --color-texto: #222222;
 }
 ```
 
-Más adelante incorporaremos efectos visuales cuando el usuario interactúe con ellos.
+Estas variables pueden utilizarse en cualquier parte de la hoja de estilos.
 
 ---
 
-# Imágenes y contenido multimedia
-
-Las imágenes y los elementos multimedia compartirán una regla sencilla:
+# Hoja de estilos del laboratorio
 
 ```css
-img,
-video,
-audio {
-
-    max-width: 100%;
-
-}
-```
-
-Esto evita que un recurso visual exceda el ancho disponible en su contenedor.
-
----
-
-# Reset básico
-
-La hoja de estilos comenzará con un pequeño conjunto de reglas generales.
-
-```css
-* {
-
-    margin: 0;
-
-    padding: 0;
-
-    box-sizing: border-box;
-
-}
-```
-
-Estas propiedades ayudan a obtener un comportamiento más uniforme entre navegadores.
-
-Durante el siguiente laboratorio se estudiará con mayor profundidad el modelo de caja.
-
----
-
-# Hoja de estilos
-
-La hoja de estilos utilizada durante este laboratorio es:
-
-```css
-/* Reset básico */
-
-* {
-
-    margin: 0;
-
-    padding: 0;
-
-    box-sizing: border-box;
-
-}
-
-
-/* Variables */
+/* =======================================================
+   VARIABLES
+======================================================= */
 
 :root {
 
     --color-primario: #1f3c5c;
-
     --color-secundario: #0056b3;
 
     --color-fondo: #f4f4f4;
-
     --color-superficie: #ffffff;
 
     --color-texto: #222222;
@@ -275,7 +206,9 @@ La hoja de estilos utilizada durante este laboratorio es:
 }
 
 
-/* Documento */
+/* =======================================================
+   ESTILOS GENERALES
+======================================================= */
 
 body {
 
@@ -290,7 +223,9 @@ body {
 }
 
 
-/* Encabezado */
+/* =======================================================
+   ENCABEZADO
+======================================================= */
 
 header {
 
@@ -299,7 +234,28 @@ header {
 }
 
 
-/* Contenido principal */
+/* =======================================================
+   NAVEGACIÓN
+======================================================= */
+
+nav a {
+
+    color: var(--color-secundario);
+
+    text-decoration: none;
+
+}
+
+nav a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =======================================================
+   CONTENIDO PRINCIPAL
+======================================================= */
 
 main {
 
@@ -308,7 +264,9 @@ main {
 }
 
 
-/* Títulos */
+/* =======================================================
+   TÍTULOS
+======================================================= */
 
 h1,
 h2,
@@ -319,18 +277,45 @@ h3 {
 }
 
 
-/* Enlaces */
+/* =======================================================
+   TEXTO
+======================================================= */
 
-a {
+p {
 
-    color: var(--color-secundario);
-
-    text-decoration: none;
+    color: var(--color-texto);
 
 }
 
 
-/* Recursos multimedia */
+/* =======================================================
+   TABLAS
+======================================================= */
+
+table {
+
+    width: 100%;
+
+}
+
+
+/* =======================================================
+   FORMULARIOS
+======================================================= */
+
+input,
+textarea,
+select,
+button {
+
+    font: inherit;
+
+}
+
+
+/* =======================================================
+   IMÁGENES Y MULTIMEDIA
+======================================================= */
 
 img,
 video,
@@ -341,7 +326,9 @@ audio {
 }
 
 
-/* Pie de página */
+/* =======================================================
+   PIE DE PÁGINA
+======================================================= */
 
 footer {
 
@@ -352,87 +339,302 @@ footer {
 
 ---
 
+# Estilos generales
+
+La regla principal del documento es:
+
+```css
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+```
+
+Esta regla establece:
+
+- La familia tipográfica.
+- El fondo general.
+- El color principal del texto.
+- La separación entre líneas.
+
+---
+
+# Tipografía
+
+La propiedad `font-family` define la tipografía del documento.
+
+```css
+font-family: Arial, sans-serif;
+```
+
+El navegador intentará utilizar Arial.
+
+Si no está disponible, utilizará una tipografía genérica sin serifas.
+
+---
+
+# Altura de línea
+
+La propiedad `line-height` controla el espacio vertical entre las líneas de texto.
+
+```css
+line-height: 1.6;
+```
+
+Una separación adecuada mejora la legibilidad.
+
+---
+
+# Colores de fondo
+
+El fondo general se define mediante:
+
+```css
+background-color: var(--color-fondo);
+```
+
+El encabezado, el contenido principal y el pie de página utilizan:
+
+```css
+background-color: var(--color-superficie);
+```
+
+En esta etapa no se han incorporado márgenes ni rellenos, por lo que las superficies todavía no se presentan como componentes visuales independientes.
+
+---
+
+# Títulos
+
+Los títulos utilizan el color principal.
+
+```css
+h1,
+h2,
+h3 {
+    color: var(--color-primario);
+}
+```
+
+El selector agrupado evita repetir la misma propiedad para cada nivel de encabezado.
+
+---
+
+# Enlaces
+
+Los enlaces utilizan el color secundario.
+
+```css
+nav a {
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+```
+
+La propiedad:
+
+```css
+text-decoration: none;
+```
+
+elimina el subrayado predeterminado.
+
+Cuando el usuario pasa el cursor sobre un enlace, el subrayado vuelve a aparecer.
+
+```css
+nav a:hover {
+    text-decoration: underline;
+}
+```
+
+Este cambio ayuda a comunicar que el elemento es interactivo.
+
+---
+
+# Herencia tipográfica
+
+Los controles de formulario pueden utilizar la misma tipografía del documento mediante:
+
+```css
+input,
+textarea,
+select,
+button {
+    font: inherit;
+}
+```
+
+La propiedad `inherit` permite heredar el estilo tipográfico del elemento padre.
+
+---
+
+# Imágenes y multimedia
+
+La siguiente regla evita que las imágenes, los videos y los audios superen el ancho disponible:
+
+```css
+img,
+video,
+audio {
+    max-width: 100%;
+}
+```
+
+Esto ayuda a prevenir desbordamientos horizontales.
+
+El diseño adaptable completo se desarrollará posteriormente.
+
+---
+
+# Tablas
+
+La tabla utiliza:
+
+```css
+table {
+    width: 100%;
+}
+```
+
+Esto permite que ocupe el ancho disponible dentro de su contenedor.
+
+En este laboratorio todavía no se aplican bordes, rellenos ni estilos a las celdas.
+
+---
+
+# Contraste
+
+El contraste permite diferenciar correctamente el texto del fondo.
+
+En este proyecto se utiliza:
+
+```css
+--color-fondo: #f4f4f4;
+--color-superficie: #ffffff;
+--color-texto: #222222;
+```
+
+El texto oscuro sobre fondos claros favorece la lectura.
+
+Al personalizar la paleta, el estudiante debe verificar que los colores mantengan un contraste suficiente.
+
+---
+
 # Funcionamiento del laboratorio
 
 Durante esta práctica, el estudiante:
 
-1. Agrega variables CSS.
-2. Define la paleta de colores.
-3. Configura la tipografía del sitio.
-4. Mejora la legibilidad mediante `line-height`.
-5. Personaliza títulos y enlaces.
-6. Configura imágenes y multimedia.
-7. Aplica un reset básico.
-8. Comprueba la nueva apariencia del sitio.
+1. Conserva la estructura HTML del Proyecto Web Personal.
+2. Define una paleta de colores.
+3. Declara variables dentro de `:root`.
+4. Aplica el color de fondo general.
+5. Define el color de las superficies.
+6. Aplica una tipografía general.
+7. Modifica el color de los títulos.
+8. Personaliza los enlaces.
+9. Comprueba el comportamiento de `:hover`.
+10. Verifica que las imágenes y la multimedia no desborden su contenedor.
 
 ---
 
 # Archivos
 
-| Archivo | Descripción |
-|---------|-------------|
-| `index.html` | Segunda versión del Proyecto Web con CSS. |
-| `style.css` | Hoja de estilos con identidad visual inicial. |
+| Archivo o carpeta | Descripción |
+|-------------------|-------------|
+| `index.html` | Estructura completa del Proyecto Web Personal. |
+| `style.css` | Hoja de estilos con la identidad visual inicial. |
 | `README.md` | Documentación del laboratorio. |
+| `img/` | Recursos gráficos utilizados por el sitio. |
+| `multimedia/` | Archivos de audio y video. |
 
 ---
 
 # Cómo ejecutar el laboratorio
 
 1. Abra la carpeta `css/02-identidad-visual`.
-2. Ejecute `index.html`.
-3. Observe la nueva apariencia del sitio.
-4. Modifique temporalmente alguno de los colores definidos en `:root`.
-5. Guarde los cambios y actualice el navegador.
-6. Compruebe cómo el cambio afecta a todos los elementos que utilizan esa variable.
+2. Verifique que `index.html` y `style.css` se encuentren en la misma carpeta.
+3. Ejecute `index.html` en el navegador.
+4. Compruebe que el fondo general sea gris claro.
+5. Verifique que el encabezado, el contenido y el pie utilicen fondo blanco.
+6. Observe que los títulos aparezcan en azul oscuro.
+7. Compruebe que los enlaces utilicen el color azul secundario.
+8. Pase el cursor sobre los enlaces.
+9. Observe el subrayado generado mediante `:hover`.
+10. Cambie temporalmente una variable y verifique cómo afecta el sitio.
 
 ---
 
 # Buenas prácticas
 
-- Definir los colores mediante variables CSS.
+- Definir una paleta de colores limitada.
+- Utilizar variables CSS para valores repetidos.
+- Mantener un buen contraste.
+- Evitar utilizar demasiados colores.
 - Utilizar nombres descriptivos para las variables.
-- Mantener una paleta de colores coherente.
-- Definir una tipografía principal para todo el sitio.
-- Evitar repetir valores de color en diferentes reglas.
-- Organizar la hoja de estilos por secciones.
-- Mantener la separación entre HTML y CSS.
-- Aplicar estilos generales antes de los específicos.
+- Mantener una tipografía legible.
+- Aplicar los colores de forma consistente.
+- Separar la estructura HTML de la apariencia visual.
+- No utilizar estilos en línea.
+- No introducir todavía márgenes, rellenos o bordes que pertenecen al siguiente laboratorio.
 
 ---
 
 # Reto
 
-Personalice la identidad visual de su Proyecto Web Personal.
+Personalice la identidad visual del Proyecto Web Personal.
 
-Puede realizar las siguientes modificaciones:
+Debe:
 
-1. Definir una nueva paleta de colores.
-2. Cambiar la tipografía principal.
-3. Personalizar los colores de los títulos.
-4. Modificar el color de los enlaces.
-5. Ajustar la altura de línea.
-6. Agregar una variable para el color del pie de página.
-7. Crear una identidad visual acorde con el tema de su proyecto.
+1. Cambiar el color principal.
+2. Cambiar el color secundario.
+3. Definir un color de fondo.
+4. Definir un color para las superficies.
+5. Cambiar la tipografía general.
+6. Verificar el contraste.
+7. Comprobar que los enlaces sean fáciles de identificar.
+8. Mantener una apariencia consistente.
+
+Evite utilizar colores aleatorios sin relación con el tema del proyecto.
 
 ---
 
 # Resultado esperado
 
-Al finalizar el laboratorio, el Proyecto Web Personal contará con una identidad visual básica basada en una paleta de colores, una tipografía consistente y una hoja de estilos organizada mediante variables CSS.
+Al finalizar el laboratorio, el Proyecto Web Personal deberá:
+
+- Conservar su estructura HTML.
+- Contar con una paleta de colores.
+- Utilizar variables CSS.
+- Tener una tipografía general.
+- Mostrar títulos y enlaces personalizados.
+- Mantener una apariencia visual consistente.
+- Estar preparado para incorporar el modelo de caja.
 
 ---
 
 # Conclusiones
 
-La identidad visual es uno de los elementos que más influye en la percepción de un sitio web.
+La identidad visual permite establecer una apariencia coherente para un sitio web.
 
-Utilizar variables CSS desde las primeras etapas del desarrollo facilita el mantenimiento del proyecto, mejora la organización del código y prepara al estudiante para trabajar con proyectos de mayor complejidad.
+Las variables CSS facilitan la reutilización de colores y permiten modificar la apariencia general desde un solo lugar.
+
+La tipografía, los colores y el contraste deben seleccionarse de acuerdo con el tema del proyecto y con criterios de legibilidad.
+
+En este laboratorio se definió la base visual del Proyecto Web Personal sin modificar todavía los espacios, bordes o dimensiones de los elementos.
 
 ---
 
 # ¿Qué sigue?
 
-Ahora que el Proyecto Web Personal cuenta con una identidad visual básica, en el siguiente laboratorio aprenderemos a controlar el espacio que ocupa cada elemento mediante el **modelo de caja de CSS**.
+En el siguiente laboratorio se trabajará el modelo de caja de CSS.
 
-Comprender el funcionamiento de márgenes, bordes, rellenos y dimensiones permitirá organizar el contenido de forma más limpia y profesional.
+Se incorporarán:
+
+- `margin`
+- `padding`
+- `border`
+- `width`
+- `box-sizing`
+
+Estos conceptos permitirán controlar el espacio ocupado por los elementos y mejorar la organización visual del sitio.
