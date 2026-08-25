@@ -1,4 +1,4 @@
-# Laboratorio 07: ¿Cómo explorar una API antes de programarla?
+# Laboratorio 08: ¿Cómo explorar una API antes de programarla?
 
 **Nivel:** Básico
 
