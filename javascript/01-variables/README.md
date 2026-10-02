@@ -37,7 +37,7 @@ Actualmente se recomienda utilizar principalmente `let` y `const`.
 ```javascript
 var nombre = "María";
 let edad = 20;
-const universidad = "Uniremington";
+const universidad = "Mi Universidad";
 ```
 
 La variable `edad` puede cambiar:
@@ -49,7 +49,7 @@ edad = 21;
 En cambio, una constante no puede recibir un valor diferente mediante una nueva asignación:
 
 ```javascript
-const universidad = "Uniremington";
+const universidad = "Mi Universidad";
 
 // Esto produciría un error:
 // universidad = "Otra institución";
