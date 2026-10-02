@@ -27,7 +27,7 @@ Todos los días utilizamos Internet.
 Abrimos un navegador, escribimos una dirección como:
 
 ```text
-https://www.uniremington.edu.co
+https://www.example.com
 ```
 
 presionamos **Enter** y, pocos segundos después, aparece una página completamente funcional.
@@ -67,7 +67,7 @@ El usuario escribe una dirección web.
 Por ejemplo:
 
 ```text
-https://www.uniremington.edu.co
+https://www.example.com
 ```
 
 y presiona **Enter**.
@@ -108,7 +108,7 @@ La dirección escrita por el usuario recibe el nombre de:
 Ejemplo:
 
 ```text
-https://www.uniremington.edu.co
+https://www.example.com
 ```
 
 Una URL puede dividirse en diferentes partes.
@@ -124,7 +124,7 @@ Corresponde al protocolo de comunicación.
 Y:
 
 ```text
-www.uniremington.edu.co
+www.example.com
 ```
 
 Corresponde al dominio del sitio.
@@ -146,7 +146,7 @@ El DNS traduce nombres fáciles de recordar en direcciones IP.
 Por ejemplo:
 
 ```text
-www.uniremington.edu.co
+www.example.com
 
 ↓
 
@@ -301,7 +301,7 @@ Utilice cualquier sitio web.
 Por ejemplo:
 
 ```text
-https://www.uniremington.edu.co
+https://www.example.com
 ```
 
 o
