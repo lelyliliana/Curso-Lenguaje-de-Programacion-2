@@ -101,7 +101,7 @@ Una petición contiene información como:
 Por ejemplo:
 
 ```text
-GET https://www.uniremington.edu.co
+GET https://www.example.com
 ```
 
 ---
