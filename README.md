@@ -273,8 +273,6 @@ Al finalizar el curso el estudiante habrá desarrollado un Proyecto Web Personal
 Ingeniera de Sistemas  
 Magíster en Gestión de Tecnologías de la Información  
 Docente Investigadora  
-Corporación Universitaria Remington
-
 ---
 
 # Licencia
